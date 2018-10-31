@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import Root from 'Root'
-import CommentList from 'components/CommentList/index'
+import CommentList from 'components/CommentList'
 
 let wrapped
 
@@ -19,5 +19,5 @@ beforeEach(() => {
 
 it('creates one LI element per comment', () => {
   expect(wrapped.render().text()).toContain('Comment 1')
-  expect(wrapped.render().text()).toContain('Comment 1')
+  expect(wrapped.render().text()).toContain('Comment 2')
 })
